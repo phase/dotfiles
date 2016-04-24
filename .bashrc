@@ -64,7 +64,7 @@ function pc {
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\w\[\033[00m\] \[\033[03;32m\]$(pc)\[\033[00m\]λ '
 else
- nfocmp shows the number of colors tput works with, for example co   PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -92,7 +92,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -119,6 +119,13 @@ if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then
+
     . /etc/bash_completion
   fi
 fi
+
+export PATH="/home/phase/dlang/dub:/home/phase/dlang/dmd-2.071.0/linux/bin64:$PATH"
+export LIBRARY_PATH="/home/phase/dlang/dmd-2.071.0/linux/lib64:$LIBRARY_PATH"
+export LD_LIBRARY_PATH="/home/phase/dlang/dmd-2.071.0/linux/lib64:$LD_LIBRARY_PATH"
+export DMD=dmd
+export DC=dmd
