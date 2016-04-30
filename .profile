@@ -26,4 +26,4 @@ if [ -d "$HOME/rpitools" ] ; then
     PATH="$HOME/rpitools/arm-bcm2708/gcc-linaro-arm-linux/gnueabihf-raspbian:$HOME/rpitools/arm-bcm2708/gcc-linaro-arm-linux/gnueabihf-raspbian/bin:$PATH"
 fi
 
-alias compinfo="cat /etc/*release && lscpu"
+alias compinfo="(cat /etc/*release && lscpu)"
