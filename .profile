@@ -26,4 +26,14 @@ if [ -d "$HOME/rpitools" ] ; then
     PATH="$HOME/rpitools/arm-bcm2708/gcc-linaro-arm-linux/gnueabihf-raspbian:$HOME/rpitools/arm-bcm2708/gcc-linaro-arm-linux/gnueabihf-raspbian/bin:$PATH"
 fi
 
+PATH="$HOME/.local/bin/:$PATH"
+PATH="/usr/local/bin/:$PATH"
+
+JAVA_HOME=/usr/
+
 alias compinfo="(cat /etc/*release && lscpu)"
+
+# OPAM configuration
+. /home/phase/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+eval `opam config env`

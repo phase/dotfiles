@@ -124,8 +124,24 @@ if ! shopt -oq posix; then
   fi
 fi
 
+#path crap
+
 export PATH="/home/phase/dlang/dub:/home/phase/dlang/dmd-2.071.0/linux/bin64:$PATH"
 export LIBRARY_PATH="/home/phase/dlang/dmd-2.071.0/linux/lib64:$LIBRARY_PATH"
 export LD_LIBRARY_PATH="/home/phase/dlang/dmd-2.071.0/linux/lib64:$LD_LIBRARY_PATH"
 export DMD=dmd
 export DC=dmd
+export CLASSPATH=".:$HOME/bin/antlr-4.5.3-complete.jar:$CLASSPATH"
+alias antlr4="java -jar $HOME/bin/antlr-4.5.3-complete.jar"
+alias grun="java org.antlr.v4.gui.TestRig"
+
+eval `opam config env`
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# added by travis gem
+[ -f /home/phase/.travis/travis.sh ] && source /home/phase/.travis/travis.sh
+export DEVKITPRO=/opt/devkitpro
+export DEVKITARM=/opt/devkitpro/devkitARM
+export PATH=/usr/local/heroku/bin:/home/phase/.opam/system/bin:/home/phase/dlang/dub:/home/phase/dlang/dmd-2.071.0/linux/bin64:/usr/local/bin/:/home/phase/.local/bin/:/home/phase/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/devkitpro/devkitARM/bin
