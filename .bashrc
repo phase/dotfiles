@@ -144,4 +144,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 [ -f /home/phase/.travis/travis.sh ] && source /home/phase/.travis/travis.sh
 export DEVKITPRO=/opt/devkitpro
 export DEVKITARM=/opt/devkitpro/devkitARM
-export PATH=/usr/local/heroku/bin:/home/phase/.opam/system/bin:/home/phase/dlang/dub:/home/phase/dlang/dmd-2.071.0/linux/bin64:/usr/local/bin/:/home/phase/.local/bin/:/home/phase/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/devkitpro/devkitARM/bin
+export PATH=/usr/local/heroku/bin:/home/phase/.opam/system/bin:/home/phase/dlang/dub:/home/phase/dlang/dmd-2.071.0/linux/bin64:/usr/local/bin/:/home/phase/.local/bin/:/home/phase/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/devkitpro/devkitARM/bin:/home/phase/.cargo/bin
+export EDITOR='micro'
