@@ -147,3 +147,8 @@ export DEVKITARM=/opt/devkitpro/devkitARM
 export PATH=/usr/local/heroku/bin:/home/phase/.opam/system/bin:/home/phase/dlang/dub:/home/phase/dlang/dmd-2.071.0/linux/bin64:/usr/local/bin/:/home/phase/.local/bin/:/home/phase/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/devkitpro/devkitARM/bin:/home/phase/.cargo/bin
 #export EDITOR='micro'
 export EDITOR='vim'
+
+# save screenshots into pics
+alias scrot='scrot ~/Pictures/Screenshots/%b%d::%H%M%S.png'
+
+export PATH="$HOME/.cabal/bin:$PATH"
