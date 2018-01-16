@@ -125,12 +125,7 @@ if ! shopt -oq posix; then
 fi
 
 #path crap
-
-export PATH="/home/phase/dlang/dub:/home/phase/dlang/dmd-2.071.0/linux/bin64:$PATH"
-export LIBRARY_PATH="/home/phase/dlang/dmd-2.071.0/linux/lib64:$LIBRARY_PATH"
-export LD_LIBRARY_PATH="/home/phase/dlang/dmd-2.071.0/linux/lib64:$LD_LIBRARY_PATH"
-export DMD=dmd
-export DC=dmd
+source ~/dlang/dmd-2.074.1/activate
 export CLASSPATH=".:$HOME/bin/antlr-4.5.3-complete.jar:$CLASSPATH"
 alias antlr4="java -jar $HOME/bin/antlr-4.5.3-complete.jar"
 alias grun="java org.antlr.v4.gui.TestRig"
@@ -152,3 +147,5 @@ export EDITOR='vim'
 alias scrot='scrot ~/Pictures/Screenshots/%b%d::%H%M%S.png'
 
 export PATH="$HOME/.cabal/bin:$PATH"
+export GOPATH="$HOME/go"
+

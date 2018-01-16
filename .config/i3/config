@@ -192,4 +192,4 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 Bindsym XF86AudioPrev exec playerctl previous
 
-
+for_window [instance=peek] floating enable
