@@ -37,3 +37,7 @@ alias compinfo="(cat /etc/*release && lscpu)"
 . /home/phase/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 eval `opam config env`
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/usr/lib/go/bin:$PATH"
+
